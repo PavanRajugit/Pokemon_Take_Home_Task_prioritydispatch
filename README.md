@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -73,3 +74,7 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+=======
+# Pokemon_Take_Home_Task_prioritydispatch
+>>>>>>> 755c483bd572a85a5173020546070b2c1ca9238c
+# Pokemon_Take_Home_Task_PriorityDispatch1
