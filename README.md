@@ -1,80 +1,112 @@
-<<<<<<< HEAD
-# Nuxt Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+---
 
-Make sure to install dependencies:
+```md
+# Pokémon Explorer 🧭
 
+A full-stack Pokémon information website built with Nuxt 3, using a clean Vue + TypeScript frontend and a lightweight backend API layer that consumes the public  PokéAPI .
+
+This project was designed to be simple, user-friendly, and interview-ready, with a focus on clean architecture, good UX, and clear separation of concerns.
+
+---
+
+## 🚀 Features
+
+- Displays a list of 60 Pokémon with names and thumbnails
+- Custom search filter to quickly find Pokémon by name
+-  Dynamic routing  to individual Pokémon profile pages
+-  Quick View modal  to preview Pokémon details without leaving the landing page
+- Detailed profile page showing:
+  - Name
+  - Height
+  - Weight
+  - Abilities (formatted as a comma-separated, capitalized string)
+- Responsive layout using  plain CSS only  (no UI libraries)
+
+---
+
+## 🧱 Architecture Overview
+
+This project uses Nuxt 3’s full-stack capabilities:
+
+### Frontend
+-  Nuxt 3 / Vue 3 
+-  TypeScript 
+- Pages and components for clean UI structure
+- Client-side filtering for fast search experience
+
+### Backend
+- Nuxt  server API routes  (`/server/api`)
+- Acts as a middle layer between the frontend and PokéAPI
+- Backend endpoints:
+  - `GET /api/pokemon` → Fetches first 60 Pokémon (name + image)
+  - `GET /api/pokemon/:name` → Fetches detailed Pokémon data
+
+The frontend never calls PokéAPI directly.
+
+
+
+## 🎨 Design Decisions
+
+-  Hero-first landing page  to clearly communicate the purpose of the app
+-  Search placed prominently  since filtering is the primary interaction
+-  Quick View modal  added as a lead-level UX enhancement to reduce unnecessary navigation
+- Muted, friendly color palette to keep the UI calm and readable
+- No CSS frameworks used to demonstrate core CSS fundamentals
+
+---
+
+## 🧠 Bonus: Lead-Level Enhancement
+
+As a project lead improvement, a  Quick View modal  was added to the landing page.  
+This allows users to preview Pokémon details instantly without navigating away from the list, improving browsing efficiency and overall UX.
+
+The feature:
+- Reuses existing backend APIs
+- Is implemented as a reusable component
+- Does not increase backend complexity
+
+---
+
+## 🛠️ Tech Stack
+
+-  Nuxt 3 
+-  Vue 3 
+-  TypeScript 
+-  JavaScript (API layer) 
+-  PokéAPI 
+-  Plain CSS 
+
+---
+
+## ▶️ Getting Started
+
+### Install dependencies
 ```bash
-# npm
 npm install
+````
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### Run the development server
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Open:
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+http://localhost:3000
 ```
 
-Locally preview production build:
+---
 
-```bash
-# npm
-npm run preview
+## 📌 Notes
 
-# pnpm
-pnpm preview
+* No UI libraries (Bootstrap, Tailwind, etc.) were used
+* Focus was placed on clarity, maintainability, and UX
+* The project is suitable for both take-home assignments and portfolio use
 
-# yarn
-yarn preview
+---
 
-# bun
-bun run preview
-```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-=======
-# Pokemon_Take_Home_Task_prioritydispatch
->>>>>>> 755c483bd572a85a5173020546070b2c1ca9238c
-# Pokemon_Take_Home_Task_PriorityDispatch1
